@@ -11,7 +11,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
-        className="w-[200px] px-3 py-2 rounded-sm text-white bg-blue-500"
+        className={`w-[200px] px-3 py-2 rounded-sm text-white bg-blue-500 hover:bg-blue-600 transition-all duration-150 ease-in-out ${className}`}
         ref={ref}
         {...props}
       />

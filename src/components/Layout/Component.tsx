@@ -1,6 +1,8 @@
 "use client";
 import Headers from "@components/Headers";
 import Hero from "@components/Hero";
+import Service from "@components/Service";
+import VissionMission from "@components/VissionMission";
 import { ReactNode } from "react";
 
 export default function Layout(): ReactNode {
@@ -10,6 +12,8 @@ export default function Layout(): ReactNode {
         <Headers />
       </div>
       <Hero />
+      <Service />
+      <VissionMission />
     </>
   );
 }

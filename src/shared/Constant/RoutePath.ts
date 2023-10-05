@@ -4,11 +4,15 @@ export const RoutePath = [
     link: "/",
   },
   {
-    title: "About Us",
+    title: "Service",
     scroll: true,
-    link: "about",
+    link: "service",
   },
-
+  {
+    title: "Our Teams",
+    scroll: true,
+    link: "team",
+  },
   {
     title: "Contact Us",
     scroll: true,
