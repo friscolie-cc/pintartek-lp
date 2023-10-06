@@ -13,13 +13,13 @@ export default function Content({
     <div
       className={`flex flex-col ${
         flip ? "lg:flex-row-reverse" : "lg:flex-row"
-      } w-full mx-auto container justify-center`}
+      } w-full mx-auto lg:container justify-center`}
     >
       <div className="w-full p-5">
         <Image src={src} alt={`service-${src}`} />
       </div>
       <div className={`w-full flex flex-col`}>
-        <div className="flex justify-start flex-row space-x-1 items-center">
+        <div className="flex justify-start flex-row space-x-1 items-center py-5">
           <span
             style={{
               content: "",
@@ -36,7 +36,7 @@ export default function Content({
           <p className="text-base font-bold">{firstHeader}</p>
         </div>
         <div className="flex justify-start">
-          <h1 className="text-5xl leading-tight font-bold -tracking-[0.06em]">
+          <h1 className="text-4xl lg:text-5xl leading-tight font-bold -tracking-[0.06em]">
             {secondHeader}
           </h1>
         </div>

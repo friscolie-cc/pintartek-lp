@@ -12,10 +12,10 @@ export const Navigations = ({ isMobile }: Props) => {
   if (isMobile) {
     return (
       <div
-        className={`absolute z-[1000] flex h-screen w-full flex-col bg-mobileOverlay bg-opacity-80 pb-3`}
+        className={`absolute z-[1000] flex h-screen w-full flex-col bg-white pb-3`}
       >
         <div
-          className={`absolute z-[1000] flex h-full w-3/4 flex-col space-y-8 border bg-secondaryWhite px-5 pb-3 pt-12 shadow-md`}
+          className={`absolute z-[1000] flex h-full w-3/4 flex-col space-y-8 border bg-white px-5 pb-3 pt-12 shadow-md`}
         >
           {RoutePath.map((route) => (
             <Link
@@ -40,7 +40,7 @@ export const Navigations = ({ isMobile }: Props) => {
               smooth
               duration={700}
               key={route.title}
-              className="base-text cursor-pointer border-primaryBlack p-2 font-medium transition-all duration-75 ease-in-out hover:border-b-2 hover:border-b-black text-gray-700 text-lg"
+              className="base-text cursor-pointer border-primaryBlack p-2 font-medium transition-all duration-75 ease-in-out hover:border-b-2 hover:border-b-black text-gray-700"
             >
               {route.title}
             </Scroll>
@@ -48,7 +48,7 @@ export const Navigations = ({ isMobile }: Props) => {
             <Link
               href={route.link}
               key={route.title}
-              className="base-text block border-primaryBlack p-2 text-lg font-medium transition-all duration-75 ease-in-out hover:border-b-2 hover:border-b-black text-gray-700"
+              className="base-text block border-primaryBlack p-2 font-medium transition-all duration-75 ease-in-out hover:border-b-2 hover:border-b-black text-gray-700"
             >
               {route.title}
             </Link>

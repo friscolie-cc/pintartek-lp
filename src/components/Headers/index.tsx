@@ -10,7 +10,7 @@ const Headers = () => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className={`container mx-auto px-2 lg:px-9 sticky`}>
+          <div className={`container mx-auto px-2 lg:px-9 sticky top-0`}>
             <div className="relative flex h-24 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <Disclosure.Button className="headers">

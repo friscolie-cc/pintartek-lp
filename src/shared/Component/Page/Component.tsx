@@ -8,7 +8,7 @@ export default function Page({
   id: string;
 }): ReactNode {
   return (
-    <section className="container w-full mx-auto px-3 py-10" id={id}>
+    <section className="container w-full mx-auto px-5 py-2 lg:py-10 " id={id}>
       {children}
     </section>
   );
